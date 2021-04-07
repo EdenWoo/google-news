@@ -7,7 +7,8 @@ import {ForYouComponent} from './pages/for-you/for-you.component';
 const routes: Routes = [
   {
     path: '',
-    component: TopStoriesComponent,
+    redirectTo: 'top-stories',
+    pathMatch: 'full'
   },
   {
     path: 'top-stories',
