@@ -1,8 +1,5 @@
-@import "src/styles/breakpoints";
-
 .sidenav {
   min-width: 280px;
-  margin-top: 70px;
 
   &__link {
     height: 40px;
@@ -18,12 +15,5 @@
 
   &__name {
     font-size: 14px;
-  }
-}
-
-
-@include media-breakpoint('lt-md') {
-  .sidenav {
-    margin-top: 0px;
   }
 }

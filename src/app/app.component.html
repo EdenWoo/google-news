@@ -1,11 +1,11 @@
 <div *ngIf="!(isMobile$ | async); else isMobile">
   <ng-container>
     <app-header [sidenav]="sidenav"></app-header>
-    <mat-sidenav *ngIf="!(mdDevice$ | async)" #sidenav mode="side" opened>
+    <mat-sidenav #sidenav mode="side" opened *ngIf="!(mdDevice$ | async)" class="mt-20">
       <app-side-menu></app-side-menu>
     </mat-sidenav>
     <mat-sidenav-container class="sidenav-container">
-      <mat-sidenav *ngIf="mdDevice$ | async" #sidenav mode="side" opened>
+      <mat-sidenav *ngIf="mdDevice$ | async" #sidenav mode="side" opened class="mt-4">
         <app-side-menu></app-side-menu>
       </mat-sidenav>
       <mat-sidenav-content class="flex bg-white">
